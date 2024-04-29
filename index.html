@@ -8,11 +8,12 @@
     <style> 
     * {
     margin: 0;
+    box-shadow: 2px;
     box-sizing: border-box;
     }
 
    body {
-   min: height 100vh;
+   min-height: 100vh;
    background-color: rgb(145, 96, 191);
    color: rgb(229, 229, 229);
    display: grid;
@@ -51,11 +52,11 @@ font-size: 100px;
    <script>
 
 // estado da minha aplicação
-let number = 0
+var number = 0
 
 // alteradores de estado da aplicação
 function aumentar() {
-number= number + 1
+var number = number + 1
 mostrarnatela()
 }
 
@@ -66,7 +67,7 @@ mostrarnatela()
 
 // jogar o estado da aplicação na tela
 function mostrarnatela() {
-const p=document.querySelector("resultado")
+//const p=document.querySelector("resultado")
 }
 
 //iniciar

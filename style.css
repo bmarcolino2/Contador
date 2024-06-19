@@ -1,0 +1,82 @@
+ /* Estilos gerais */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do corpo */
+body {
+    background: radial-gradient(circle, #ff9966, #500064);
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilos da seção do contador */
+.contador-section {
+    background: rgba(114, 20, 72, 0.2);
+    padding: 5%;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%; /* Largura responsiva */
+    max-width: 600px; /* Largura máxima */
+}
+
+/* Estilos do contador */
+.contador {
+    background-color: rgba(243, 89, 164, 0.3);
+    border: dashed 5px #710a71;
+    box-shadow: 5px 5px 25px rgba(7, 0, 4, 0.3);
+    border-radius: 10px;
+    padding: 5%;
+    font-size: 3rem; /* Tamanho responsivo */
+    margin-bottom: 20px;
+}
+
+/* Estilos do título */
+h1 {
+    font-style: oblique;
+    margin-bottom: 20px;
+}
+
+/* Estilos dos botões */
+button {
+    border: 2px dashed #5b01359d;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    background-color: #ed2b89;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 5px 5px 25px rgba(7, 0, 4, 0.3);
+}
+
+/* Estilos dos botões quando hover */
+button:hover {
+    background-color: #8d0152;
+}
+
+/* Estilos da imagem */
+.imagem {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da seção */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Adiciona borda arredondada à imagem */
+}
+
+/* Media query para telas menores */
+@media (max-width: 600px) {
+    .contador {
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
